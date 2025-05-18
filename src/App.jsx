@@ -37,11 +37,11 @@ const App = () => {
       </Float>
 
       <spotLight
-        position={[0, 5, 0]}
+        position={[0, 3.5, 0]}
         ref={spotLightRef}
         angle={0.4}
-        penumbra={0.9}
-        intensity={25}
+        penumbra={1}
+        intensity={15}
         color="#9900ff"
         distance={10}
         decay={2}
@@ -57,13 +57,13 @@ const App = () => {
       />
       <pointLight
         position={[-3, 1, -2]}
-        intensity={12}
+        intensity={6}
         color="#00ffff"
         distance={6}
       />
       <pointLight
         position={[0, -3, 0]}
-        intensity={8}
+        intensity={4}
         color="#ff3300"
         distance={5}
       />
@@ -72,7 +72,7 @@ const App = () => {
 
       <Stars radius={100} depth={100} count={750} factor={4} fade speed={1.5} />
 
-      <Environment preset="sunset" environmentIntensity={0.25} />
+      <Environment preset="sunset" environmentIntensity={0.15} />
 
       <Effects />
 

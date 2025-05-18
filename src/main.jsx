@@ -39,7 +39,7 @@ const Root = () => {
 
   return (
     <Canvas
-      camera={{ fov: 60 }}
+      camera={{ fov: 60, position: [0, 0, 4.5] }}
       gl={{ powerPreference: "high-performance", antialias: true }}
     >
       <StrictMode>

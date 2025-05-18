@@ -4,7 +4,7 @@ import * as THREE from "three";
 import { useFrame } from "@react-three/fiber";
 
 export default function Rock(props) {
-  const { nodes, materials } = useGLTF("/Rock1-com.glb");
+  const { nodes, materials } = useGLTF("/Rock2-com.glb");
 
   const group = useRef();
 
@@ -32,7 +32,7 @@ export default function Rock(props) {
         .normalize();
       mesh.targetPosition = mesh.originalPosition
         .clone()
-        .add(mesh.directionVector.clone().multiplyScalar(3.25));
+        .add(mesh.directionVector.clone().multiplyScalar(3));
     });
   }, []);
 
@@ -102,7 +102,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell.geometry}
         material={materials.moss}
-        position={[0.03, -0.532, -0.453]}
+        position={[-0.016, -0.596, -0.477]}
       />
       <mesh
         name="origin_cell001"
@@ -110,7 +110,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell001.geometry}
         material={materials.moss}
-        position={[-0.07, -1.584, 0.141]}
+        position={[0.102, 0.895, 0.387]}
       />
       <mesh
         name="origin_cell002"
@@ -118,7 +118,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell002.geometry}
         material={materials.moss}
-        position={[-0.281, 0.764, -0.281]}
+        position={[-0.073, 0.724, -0.334]}
       />
       <mesh
         name="origin_cell003"
@@ -126,7 +126,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell003.geometry}
         material={materials.moss}
-        position={[0.236, -0.311, 0.515]}
+        position={[-0.15, 1.201, -0.17]}
       />
       <mesh
         name="origin_cell004"
@@ -134,7 +134,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell004.geometry}
         material={materials.moss}
-        position={[0.013, 1.134, -0.302]}
+        position={[-0.676, 0.995, -0.062]}
       />
       <mesh
         name="origin_cell005"
@@ -142,7 +142,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell005.geometry}
         material={materials.moss}
-        position={[-0.692, -0.438, 0.03]}
+        position={[-0.642, -0.159, -0.124]}
       />
       <mesh
         name="origin_cell006"
@@ -150,7 +150,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell006.geometry}
         material={materials.moss}
-        position={[0.409, -0.11, 0.416]}
+        position={[-0.103, 1.048, 0.424]}
       />
       <mesh
         name="origin_cell007"
@@ -158,7 +158,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell007.geometry}
         material={materials.moss}
-        position={[-0.419, -0.226, 0.35]}
+        position={[-0.025, -0.006, 0.513]}
       />
       <mesh
         name="origin_cell008"
@@ -166,7 +166,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell008.geometry}
         material={materials.moss}
-        position={[0.481, -0.193, -0.399]}
+        position={[-0.732, -0.192, -0.004]}
       />
       <mesh
         name="origin_cell009"
@@ -174,7 +174,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell009.geometry}
         material={materials.moss}
-        position={[0.14, 1.24, 0.003]}
+        position={[0.156, -1.279, -0.202]}
       />
       <mesh
         name="origin_cell010"
@@ -182,7 +182,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell010.geometry}
         material={materials.moss}
-        position={[0.286, -0.51, 0.148]}
+        position={[-0.28, 1.027, 0.318]}
       />
       <mesh
         name="origin_cell011"
@@ -190,7 +190,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell011.geometry}
         material={materials.moss}
-        position={[-0.419, 0.827, 0.286]}
+        position={[0.272, -1.405, 0.243]}
       />
       <mesh
         name="origin_cell012"
@@ -198,7 +198,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell012.geometry}
         material={materials.moss}
-        position={[-0.504, 0.593, -0.261]}
+        position={[0.288, -0.873, -0.428]}
       />
       <mesh
         name="origin_cell013"
@@ -206,7 +206,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell013.geometry}
         material={materials.moss}
-        position={[0.842, 0.826, 0.054]}
+        position={[-0.332, 1.127, 0.139]}
       />
       <mesh
         name="origin_cell014"
@@ -214,7 +214,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell014.geometry}
         material={materials.moss}
-        position={[0.344, -0.947, 0.051]}
+        position={[0.19, 1.272, -0.075]}
       />
       <mesh
         name="origin_cell015"
@@ -222,7 +222,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell015.geometry}
         material={materials.moss}
-        position={[0.23, 0.777, -0.381]}
+        position={[0.24, 1.027, 0.38]}
       />
       <mesh
         name="origin_cell016"
@@ -230,7 +230,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell016.geometry}
         material={materials.moss}
-        position={[-0.534, -0.853, 0.324]}
+        position={[-0.688, -0.389, 0.293]}
       />
       <mesh
         name="origin_cell017"
@@ -238,7 +238,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell017.geometry}
         material={materials.moss}
-        position={[0.079, -0.234, 0.495]}
+        position={[0.324, -0.551, 0.017]}
       />
       <mesh
         name="origin_cell018"
@@ -246,7 +246,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell018.geometry}
         material={materials.moss}
-        position={[0.492, 0.237, 0.45]}
+        position={[0.314, -0.209, 0.387]}
       />
       <mesh
         name="origin_cell019"
@@ -254,7 +254,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell019.geometry}
         material={materials.moss}
-        position={[-0.329, -0.534, 0.349]}
+        position={[-0.721, 0.203, -0.217]}
       />
       <mesh
         name="origin_cell020"
@@ -262,7 +262,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell020.geometry}
         material={materials.moss}
-        position={[-0.743, 0.854, -0.015]}
+        position={[-0.282, -0.104, 0.422]}
       />
       <mesh
         name="origin_cell021"
@@ -270,7 +270,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell021.geometry}
         material={materials.moss}
-        position={[-0.177, 1.064, -0.208]}
+        position={[-0.497, 0.284, -0.375]}
       />
       <mesh
         name="origin_cell022"
@@ -278,7 +278,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell022.geometry}
         material={materials.moss}
-        position={[-0.074, -0.338, 0.44]}
+        position={[-0.474, 0.429, -0.333]}
       />
       <mesh
         name="origin_cell023"
@@ -286,7 +286,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell023.geometry}
         material={materials.moss}
-        position={[-0.251, -1.475, 0.101]}
+        position={[-0.189, -0.776, -0.526]}
       />
       <mesh
         name="origin_cell024"
@@ -294,7 +294,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell024.geometry}
         material={materials.moss}
-        position={[0.217, -1.482, 0.092]}
+        position={[-0.517, 1.109, 0.007]}
       />
       <mesh
         name="origin_cell025"
@@ -302,7 +302,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell025.geometry}
         material={materials.moss}
-        position={[0.011, 0.582, 0.49]}
+        position={[0.303, -1.283, -0.147]}
       />
       <mesh
         name="origin_cell026"
@@ -310,7 +310,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell026.geometry}
         material={materials.moss}
-        position={[-0.035, -0.546, 0.498]}
+        position={[-0.503, 0.981, -0.208]}
       />
       <mesh
         name="origin_cell027"
@@ -318,7 +318,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell027.geometry}
         material={materials.moss}
-        position={[-0.5, -1.318, 0.247]}
+        position={[-0.179, -0.744, 0.459]}
       />
       <mesh
         name="origin_cell028"
@@ -326,7 +326,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell028.geometry}
         material={materials.moss}
-        position={[-0.548, -1.092, 0.046]}
+        position={[0.284, -0.848, 0.126]}
       />
       <mesh
         name="origin_cell029"
@@ -334,7 +334,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell029.geometry}
         material={materials.moss}
-        position={[0.153, -1.501, 0.266]}
+        position={[0.75, 0.674, 0.122]}
       />
       <mesh
         name="origin_cell030"
@@ -342,7 +342,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell030.geometry}
         material={materials.moss}
-        position={[-0.1, 1.26, -0.23]}
+        position={[-0.295, 1.004, -0.27]}
       />
       <mesh
         name="origin_cell031"
@@ -350,7 +350,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell031.geometry}
         material={materials.moss}
-        position={[0.487, -0.164, 0.036]}
+        position={[-0.253, 0.061, -0.442]}
       />
       <mesh
         name="origin_cell032"
@@ -358,7 +358,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell032.geometry}
         material={materials.moss}
-        position={[-0.629, -0.069, -0.226]}
+        position={[0.346, 1.199, 0.198]}
       />
       <mesh
         name="origin_cell033"
@@ -366,7 +366,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell033.geometry}
         material={materials.moss}
-        position={[0.009, 1.155, 0.158]}
+        position={[-0.639, -0.972, 0.239]}
       />
       <mesh
         name="origin_cell034"
@@ -374,7 +374,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell034.geometry}
         material={materials.moss}
-        position={[-0.277, -0.033, -0.42]}
+        position={[0.209, 0.685, 0.522]}
       />
       <mesh
         name="origin_cell035"
@@ -382,7 +382,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell035.geometry}
         material={materials.moss}
-        position={[-0.177, -0.787, 0.427]}
+        position={[0.026, 1.207, -0.33]}
       />
       <mesh
         name="origin_cell036"
@@ -390,7 +390,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell036.geometry}
         material={materials.moss}
-        position={[-0.655, 0.532, 0.175]}
+        position={[-0.729, -0.075, 0.17]}
       />
       <mesh
         name="origin_cell037"
@@ -398,15 +398,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell037.geometry}
         material={materials.moss}
-        position={[0.557, 0.247, 0.068]}
-      />
-      <mesh
-        name="origin_cell038"
-        castShadow
-        receiveShadow
-        geometry={nodes.origin_cell038.geometry}
-        material={materials.moss}
-        position={[-0.684, -0.645, 0.224]}
+        position={[-0.45, 1.092, -0.143]}
       />
       <mesh
         name="origin_cell039"
@@ -414,7 +406,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell039.geometry}
         material={materials.moss}
-        position={[-0.69, -0.153, 0.23]}
+        position={[0.609, 1.084, -0.289]}
       />
       <mesh
         name="origin_cell040"
@@ -422,7 +414,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell040.geometry}
         material={materials.moss}
-        position={[-0.103, -1.136, 0.349]}
+        position={[0.209, 1.147, -0.277]}
       />
       <mesh
         name="origin_cell041"
@@ -430,7 +422,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell041.geometry}
         material={materials.moss}
-        position={[-0.38, 0.216, 0.301]}
+        position={[-0.021, -1.149, -0.336]}
       />
       <mesh
         name="origin_cell042"
@@ -438,7 +430,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell042.geometry}
         material={materials.moss}
-        position={[0.256, -0.476, -0.492]}
+        position={[0.731, 0.707, -0.047]}
       />
       <mesh
         name="origin_cell043"
@@ -446,7 +438,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell043.geometry}
         material={materials.moss}
-        position={[-0.168, -0.479, -0.466]}
+        position={[0.592, 0.06, -0.114]}
       />
       <mesh
         name="origin_cell044"
@@ -454,7 +446,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell044.geometry}
         material={materials.moss}
-        position={[0.523, -0.307, -0.194]}
+        position={[0.858, 1.06, -0.1]}
       />
       <mesh
         name="origin_cell045"
@@ -462,7 +454,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell045.geometry}
         material={materials.moss}
-        position={[-0.39, -0.942, -0.222]}
+        position={[-0.716, -0.253, 0.198]}
       />
       <mesh
         name="origin_cell046"
@@ -470,7 +462,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell046.geometry}
         material={materials.moss}
-        position={[0.348, 1.135, 0.296]}
+        position={[0.147, -1.013, -0.396]}
       />
       <mesh
         name="origin_cell047"
@@ -478,7 +470,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell047.geometry}
         material={materials.moss}
-        position={[0.227, -1.13, -0.314]}
+        position={[-0.772, 0.679, -0.086]}
       />
       <mesh
         name="origin_cell048"
@@ -486,7 +478,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell048.geometry}
         material={materials.moss}
-        position={[-0.715, 0.085, 0.099]}
+        position={[-0.74, -0.566, 0.191]}
       />
       <mesh
         name="origin_cell049"
@@ -494,7 +486,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell049.geometry}
         material={materials.moss}
-        position={[-0.375, -0.622, -0.414]}
+        position={[-0.181, -1.287, -0.148]}
       />
       <mesh
         name="origin_cell050"
@@ -502,7 +494,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell050.geometry}
         material={materials.moss}
-        position={[0.353, 1.189, 0.081]}
+        position={[-0.641, -0.635, 0.011]}
       />
       <mesh
         name="origin_cell051"
@@ -510,7 +502,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell051.geometry}
         material={materials.moss}
-        position={[0.105, -0.88, 0.341]}
+        position={[0.067, -1.386, 0.31]}
       />
       <mesh
         name="origin_cell052"
@@ -518,7 +510,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell052.geometry}
         material={materials.moss}
-        position={[0.684, 0.151, -0.237]}
+        position={[0.566, 0.308, 0.119]}
       />
       <mesh
         name="origin_cell053"
@@ -526,7 +518,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell053.geometry}
         material={materials.moss}
-        position={[-0.506, -0.257, -0.371]}
+        position={[-0.093, 1.315, -0.307]}
       />
       <mesh
         name="origin_cell054"
@@ -534,7 +526,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell054.geometry}
         material={materials.moss}
-        position={[0.5, 0.026, -0.451]}
+        position={[-0.344, 0.829, -0.262]}
       />
       <mesh
         name="origin_cell055"
@@ -542,7 +534,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell055.geometry}
         material={materials.moss}
-        position={[0.806, 0.968, 0.186]}
+        position={[0.054, 1.219, 0.081]}
       />
       <mesh
         name="origin_cell056"
@@ -550,7 +542,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell056.geometry}
         material={materials.moss}
-        position={[0.485, 1.163, -0.255]}
+        position={[0.108, 1, 0.066]}
       />
       <mesh
         name="origin_cell057"
@@ -558,7 +550,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell057.geometry}
         material={materials.moss}
-        position={[0.847, 0.961, -0.243]}
+        position={[-0.538, -0.68, 0.353]}
       />
       <mesh
         name="origin_cell058"
@@ -566,7 +558,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell058.geometry}
         material={materials.moss}
-        position={[0.146, 0.255, -0.473]}
+        position={[-0.152, -0.153, 0.211]}
       />
       <mesh
         name="origin_cell059"
@@ -574,7 +566,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell059.geometry}
         material={materials.moss}
-        position={[0.069, -1.35, 0.309]}
+        position={[0.406, -0.391, -0.467]}
       />
       <mesh
         name="origin_cell060"
@@ -582,7 +574,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell060.geometry}
         material={materials.moss}
-        position={[0.328, -0.631, -0.089]}
+        position={[0.341, 0.897, -0.392]}
       />
       <mesh
         name="origin_cell061"
@@ -590,7 +582,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell061.geometry}
         material={materials.moss}
-        position={[0.525, 1.171, 0.009]}
+        position={[0.855, 0.945, 0.108]}
       />
       <mesh
         name="origin_cell062"
@@ -598,7 +590,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell062.geometry}
         material={materials.moss}
-        position={[-0.581, -0.509, -0.156]}
+        position={[-0.769, 0.843, -0.004]}
       />
       <mesh
         name="origin_cell063"
@@ -606,7 +598,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell063.geometry}
         material={materials.moss}
-        position={[0.648, 0.751, 0.317]}
+        position={[0.053, 1.285, -0.249]}
       />
       <mesh
         name="origin_cell064"
@@ -614,7 +606,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell064.geometry}
         material={materials.moss}
-        position={[0.122, -1.418, -0.084]}
+        position={[0.529, -0.108, 0.064]}
       />
       <mesh
         name="origin_cell065"
@@ -622,7 +614,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell065.geometry}
         material={materials.moss}
-        position={[0.408, 0.835, 0.464]}
+        position={[-0.169, 1.073, -0.296]}
       />
       <mesh
         name="origin_cell066"
@@ -630,7 +622,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell066.geometry}
         material={materials.moss}
-        position={[0.101, -0.662, 0.418]}
+        position={[-0.117, 0.209, 0.48]}
       />
       <mesh
         name="origin_cell067"
@@ -638,7 +630,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell067.geometry}
         material={materials.moss}
-        position={[0.007, -1.587, 0.251]}
+        position={[-0.612, 0.514, 0.229]}
       />
       <mesh
         name="origin_cell068"
@@ -646,7 +638,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell068.geometry}
         material={materials.moss}
-        position={[-0.165, 0.083, 0.388]}
+        position={[-0.148, -0.384, -0.479]}
       />
       <mesh
         name="origin_cell069"
@@ -654,7 +646,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell069.geometry}
         material={materials.moss}
-        position={[-0.492, 1.068, -0.046]}
+        position={[-0.511, -0.35, -0.308]}
       />
       <mesh
         name="origin_cell070"
@@ -662,7 +654,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell070.geometry}
         material={materials.moss}
-        position={[-0.233, -1.436, 0.325]}
+        position={[-0.438, -0.968, 0.428]}
       />
       <mesh
         name="origin_cell071"
@@ -670,7 +662,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell071.geometry}
         material={materials.moss}
-        position={[-0.678, 0.586, -0.199]}
+        position={[-0.53, 0.595, -0.276]}
       />
       <mesh
         name="origin_cell072"
@@ -678,7 +670,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell072.geometry}
         material={materials.moss}
-        position={[0.207, -0.678, -0.487]}
+        position={[0.326, -1.128, -0.291]}
       />
       <mesh
         name="origin_cell073"
@@ -686,7 +678,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell073.geometry}
         material={materials.moss}
-        position={[-0.568, -1.121, 0.335]}
+        position={[-0.569, 0.791, -0.21]}
       />
       <mesh
         name="origin_cell074"
@@ -694,7 +686,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell074.geometry}
         material={materials.moss}
-        position={[0.066, -0.239, -0.472]}
+        position={[0.299, -0.715, -0.485]}
       />
       <mesh
         name="origin_cell075"
@@ -702,7 +694,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell075.geometry}
         material={materials.moss}
-        position={[-0.037, -0.753, -0.487]}
+        position={[0.057, -1.209, -0.255]}
       />
       <mesh
         name="origin_cell076"
@@ -710,7 +702,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell076.geometry}
         material={materials.moss}
-        position={[-0.415, -1.326, 0.127]}
+        position={[-0.347, 1.084, -0.23]}
       />
       <mesh
         name="origin_cell077"
@@ -718,7 +710,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell077.geometry}
         material={materials.moss}
-        position={[-0.074, -1.144, -0.303]}
+        position={[-0.368, 0.231, 0.303]}
       />
       <mesh
         name="origin_cell078"
@@ -726,7 +718,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell078.geometry}
         material={materials.moss}
-        position={[0.036, 0.877, 0.453]}
+        position={[0.436, 1.035, 0.376]}
       />
       <mesh
         name="origin_cell079"
@@ -734,7 +726,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell079.geometry}
         material={materials.moss}
-        position={[-0.686, 0.232, -0.237]}
+        position={[0, -0.767, -0.517]}
       />
       <mesh
         name="origin_cell080"
@@ -742,7 +734,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell080.geometry}
         material={materials.moss}
-        position={[0.297, 0.492, 0.542]}
+        position={[-0.449, -0.394, 0.067]}
       />
       <mesh
         name="origin_cell081"
@@ -750,7 +742,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell081.geometry}
         material={materials.moss}
-        position={[0.384, -0.894, -0.294]}
+        position={[0.193, -0.498, -0.492]}
       />
       <mesh
         name="origin_cell082"
@@ -758,7 +750,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell082.geometry}
         material={materials.moss}
-        position={[0.188, -0.823, -0.456]}
+        position={[0.621, 0.802, -0.423]}
       />
       <mesh
         name="origin_cell083"
@@ -766,7 +758,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell083.geometry}
         material={materials.moss}
-        position={[-0.314, -1.279, -0.07]}
+        position={[0.816, 0.664, -0.341]}
       />
       <mesh
         name="origin_cell084"
@@ -774,7 +766,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell084.geometry}
         material={materials.moss}
-        position={[0.773, 0.327, -0.334]}
+        position={[-0.026, -0.244, 0.491]}
       />
       <mesh
         name="origin_cell085"
@@ -782,7 +774,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell085.geometry}
         material={materials.moss}
-        position={[0.419, -0.589, -0.394]}
+        position={[-0.524, 0.846, 0.233]}
       />
       <mesh
         name="origin_cell086"
@@ -790,7 +782,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell086.geometry}
         material={materials.moss}
-        position={[0.745, 0.62, -0.031]}
+        position={[0.24, 0.756, -0.423]}
       />
       <mesh
         name="origin_cell087"
@@ -798,7 +790,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell087.geometry}
         material={materials.moss}
-        position={[0.576, 0.942, -0.364]}
+        position={[-0.681, 0.34, -0.293]}
       />
       <mesh
         name="origin_cell088"
@@ -806,7 +798,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell088.geometry}
         material={materials.moss}
-        position={[0.784, 0.543, -0.325]}
+        position={[-0.726, -0.426, 0.073]}
       />
       <mesh
         name="origin_cell089"
@@ -814,7 +806,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell089.geometry}
         material={materials.moss}
-        position={[0.049, 0.093, 0.548]}
+        position={[0.611, 0.919, 0.385]}
       />
       <mesh
         name="origin_cell090"
@@ -822,7 +814,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell090.geometry}
         material={materials.moss}
-        position={[0.241, 1.254, -0.146]}
+        position={[0.42, -0.082, 0.431]}
       />
       <mesh
         name="origin_cell091"
@@ -830,7 +822,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell091.geometry}
         material={materials.moss}
-        position={[-0.523, 0.305, -0.376]}
+        position={[-0.331, -0.499, 0.325]}
       />
       <mesh
         name="origin_cell092"
@@ -838,7 +830,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell092.geometry}
         material={materials.moss}
-        position={[0.3, -1.258, 0.122]}
+        position={[0.422, -0.589, -0.197]}
       />
       <mesh
         name="origin_cell093"
@@ -846,7 +838,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell093.geometry}
         material={materials.moss}
-        position={[0.292, -0.464, 0.401]}
+        position={[0.19, -1.476, 0.121]}
       />
       <mesh
         name="origin_cell094"
@@ -854,7 +846,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell094.geometry}
         material={materials.moss}
-        position={[-0.199, 1.098, 0.331]}
+        position={[-0.375, 0.236, -0.435]}
       />
       <mesh
         name="origin_cell095"
@@ -862,7 +854,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell095.geometry}
         material={materials.moss}
-        position={[0.598, 0.418, -0.5]}
+        position={[0.072, 1.066, 0.39]}
       />
       <mesh
         name="origin_cell096"
@@ -870,7 +862,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell096.geometry}
         material={materials.moss}
-        position={[0.607, 0.521, 0.475]}
+        position={[0.559, -0.063, -0.384]}
       />
       <mesh
         name="origin_cell097"
@@ -878,7 +870,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell097.geometry}
         material={materials.moss}
-        position={[-0.23, 0.459, -0.354]}
+        position={[0.072, -0.745, 0.412]}
       />
       <mesh
         name="origin_cell098"
@@ -886,7 +878,7 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell098.geometry}
         material={materials.moss}
-        position={[0.624, 0.516, 0.313]}
+        position={[0.384, -0.827, -0.196]}
       />
       <mesh
         name="origin_cell099"
@@ -894,10 +886,378 @@ export default function Rock(props) {
         receiveShadow
         geometry={nodes.origin_cell099.geometry}
         material={materials.moss}
-        position={[0.699, 1.065, 0.149]}
+        position={[-0.321, -1.294, 0.314]}
+      />
+      <mesh
+        name="origin_cell100"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell100.geometry}
+        material={materials.moss}
+        position={[-0.417, -0.504, -0.374]}
+      />
+      <mesh
+        name="origin_cell101"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell101.geometry}
+        material={materials.moss}
+        position={[0.354, -1.162, 0.071]}
+      />
+      <mesh
+        name="origin_cell102"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell102.geometry}
+        material={materials.moss}
+        position={[0.282, -0.431, 0.354]}
+      />
+      <mesh
+        name="origin_cell103"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell103.geometry}
+        material={materials.moss}
+        position={[0.001, 1, -0.341]}
+      />
+      <mesh
+        name="origin_cell104"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell104.geometry}
+        material={materials.moss}
+        position={[-0.195, -1.507, 0.174]}
+      />
+      <mesh
+        name="origin_cell105"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell105.geometry}
+        material={materials.moss}
+        position={[0.377, 1.095, -0.285]}
+      />
+      <mesh
+        name="origin_cell106"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell106.geometry}
+        material={materials.moss}
+        position={[0.476, -0.374, -0.134]}
+      />
+      <mesh
+        name="origin_cell107"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell107.geometry}
+        material={materials.moss}
+        position={[0.283, 0.385, 0.59]}
+      />
+      <mesh
+        name="origin_cell108"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell108.geometry}
+        material={materials.moss}
+        position={[0.46, 0.272, 0.462]}
+      />
+      <mesh
+        name="origin_cell109"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell109.geometry}
+        material={materials.moss}
+        position={[0.427, -0.63, -0.403]}
+      />
+      <mesh
+        name="origin_cell110"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell110.geometry}
+        material={materials.moss}
+        position={[-0.099, 0.699, 0.468]}
+      />
+      <mesh
+        name="origin_cell111"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell111.geometry}
+        material={materials.moss}
+        position={[-0.465, -0.818, -0.134]}
+      />
+      <mesh
+        name="origin_cell112"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell112.geometry}
+        material={materials.moss}
+        position={[-0.197, 0.484, -0.244]}
+      />
+      <mesh
+        name="origin_cell113"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell113.geometry}
+        material={materials.moss}
+        position={[-0.576, -1.175, 0.364]}
+      />
+      <mesh
+        name="origin_cell114"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell114.geometry}
+        material={materials.moss}
+        position={[-0.104, 0.411, 0.479]}
+      />
+      <mesh
+        name="origin_cell117"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell117.geometry}
+        material={materials.moss}
+        position={[-0.516, -0.081, 0.322]}
+      />
+      <mesh
+        name="origin_cell118"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell118.geometry}
+        material={materials.moss}
+        position={[0.802, 1.064, -0.227]}
+      />
+      <mesh
+        name="origin_cell119"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell119.geometry}
+        material={materials.moss}
+        position={[0.114, -1.009, 0.318]}
+      />
+      <mesh
+        name="origin_cell120"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell120.geometry}
+        material={materials.moss}
+        position={[-0.523, -1.316, 0.256]}
+      />
+      <mesh
+        name="origin_cell121"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell121.geometry}
+        material={materials.moss}
+        position={[-0.725, 0.243, 0.065]}
+      />
+      <mesh
+        name="origin_cell122"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell122.geometry}
+        material={materials.moss}
+        position={[-0.725, 0.46, -0.103]}
+      />
+      <mesh
+        name="origin_cell123"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell123.geometry}
+        material={materials.moss}
+        position={[-0.473, -1.133, 0.017]}
+      />
+      <mesh
+        name="origin_cell124"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell124.geometry}
+        material={materials.moss}
+        position={[0.589, 1.155, 0.027]}
+      />
+      <mesh
+        name="origin_cell127"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell127.geometry}
+        material={materials.moss}
+        position={[0.713, 0.292, -0.31]}
+      />
+      <mesh
+        name="origin_cell128"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell128.geometry}
+        material={materials.moss}
+        position={[0.467, 0.655, -0.241]}
+      />
+      <mesh
+        name="origin_cell129"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell129.geometry}
+        material={materials.moss}
+        position={[0.583, 0.598, 0.437]}
+      />
+      <mesh
+        name="origin_cell130"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell130.geometry}
+        material={materials.moss}
+        position={[-0.672, -0.598, 0.294]}
+      />
+      <mesh
+        name="origin_cell131"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell131.geometry}
+        material={materials.moss}
+        position={[0.052, -1.428, -0.083]}
+      />
+      <mesh
+        name="origin_cell132"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell132.geometry}
+        material={materials.moss}
+        position={[-0.098, -0.957, -0.395]}
+      />
+      <mesh
+        name="origin_cell133"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell133.geometry}
+        material={materials.moss}
+        position={[0.263, 0.484, -0.46]}
+      />
+      <mesh
+        name="origin_cell134"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell134.geometry}
+        material={materials.moss}
+        position={[-0.137, -0.456, 0.47]}
+      />
+      <mesh
+        name="origin_cell136"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell136.geometry}
+        material={materials.moss}
+        position={[-0.012, -0.093, -0.305]}
+      />
+      <mesh
+        name="origin_cell137"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell137.geometry}
+        material={materials.moss}
+        position={[-0.546, -0.219, -0.382]}
+      />
+      <mesh
+        name="origin_cell138"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell138.geometry}
+        material={materials.moss}
+        position={[-0.71, 0.121, 0.237]}
+      />
+      <mesh
+        name="origin_cell139"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell139.geometry}
+        material={materials.moss}
+        position={[0.271, 0.199, -0.505]}
+      />
+      <mesh
+        name="origin_cell140"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell140.geometry}
+        material={materials.moss}
+        position={[-0.341, -0.746, -0.414]}
+      />
+      <mesh
+        name="origin_cell141"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell141.geometry}
+        material={materials.moss}
+        position={[0.09, 0.342, 0.58]}
+      />
+      <mesh
+        name="origin_cell142"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell142.geometry}
+        material={materials.moss}
+        position={[-0.658, 0.708, -0.218]}
+      />
+      <mesh
+        name="origin_cell143"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell143.geometry}
+        material={materials.moss}
+        position={[0.05, 1.169, 0.298]}
+      />
+      <mesh
+        name="origin_cell144"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell144.geometry}
+        material={materials.moss}
+        position={[-0.596, -0.056, -0.331]}
+      />
+      <mesh
+        name="origin_cell145"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell145.geometry}
+        material={materials.moss}
+        position={[0.642, 0.171, -0.183]}
+      />
+      <mesh
+        name="origin_cell146"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell146.geometry}
+        material={materials.moss}
+        position={[0.211, -0.136, -0.513]}
+      />
+      <mesh
+        name="origin_cell147"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell147.geometry}
+        material={materials.moss}
+        position={[0.199, 0.104, 0.592]}
+      />
+      <mesh
+        name="origin_cell148"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell148.geometry}
+        material={materials.moss}
+        position={[0.584, 0.374, 0.486]}
+      />
+      <mesh
+        name="origin_cell149"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell149.geometry}
+        material={materials.moss}
+        position={[-0.34, -1.023, -0.302]}
+      />
+      <mesh
+        name="origin_cell038"
+        castShadow
+        receiveShadow
+        geometry={nodes.origin_cell038.geometry}
+        material={materials.moss}
+        position={[-0.679, 0.791, -0.168]}
       />
     </group>
   );
 }
 
-useGLTF.preload("/Rock1-com.glb");
+useGLTF.preload("/Rock2-com.glb");

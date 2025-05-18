@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { useGLTF, useScroll } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
@@ -6,6 +6,7 @@ import * as THREE from "three";
 export default function Hammer(props) {
   const { nodes, materials } = useGLTF("/hammer-com.glb");
   const group = useRef();
+  const [prevOffset, setPrevOffset] = useState(0);
 
   const minScale = 0.35;
   const maxScale = 2;
@@ -37,7 +38,12 @@ export default function Hammer(props) {
 
     group.current.scale.set(currentScale, currentScale, currentScale);
 
-    group.current.rotation.y += delta / 2;
+    const scrollDirection = scrollData.offset - prevOffset;
+    setPrevOffset(scrollData.offset);
+
+    const rotationSpeed = delta / 2;
+    group.current.rotation.y +=
+      scrollDirection >= 0 ? rotationSpeed : -rotationSpeed;
   });
 
   return (
